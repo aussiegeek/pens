@@ -22,3 +22,4 @@
 /config/master.key
 assets/node_modules
 assets/dist
+assets/schema.json
