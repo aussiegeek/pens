@@ -7,7 +7,7 @@ module.exports = {
   },
 
   devtool: 'source-map',
-
+  mode: 'production',
   devServer: {
     proxy: {
       '/graphql': 'http://localhost:3000'

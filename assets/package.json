@@ -25,6 +25,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode=development",
+    "prod": "webpack",
     "download-schema": "apollo schema:download --endpoint http://localhost:3000/graphql",
     "graphql-types": "apollo codegen:generate graphql.ts --queries=src/*.tsx --outputFlat --schema=schema.json --target=typescript --addTypename --passthroughCustomScalars"
   }
