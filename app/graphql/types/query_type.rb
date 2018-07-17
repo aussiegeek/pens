@@ -13,4 +13,11 @@ class Types::QueryType < Types::BaseObject
   def brands
     Brand.all
   end
+
+  field :get_brand, Types::BrandType, null: true do
+    argument :id, ID, required: true
+  end
+  def get_brand(id:)
+    Brand.find(id)
+  end
 end

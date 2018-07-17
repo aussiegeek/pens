@@ -9,9 +9,13 @@ module.exports = {
   devtool: 'source-map',
   mode: 'production',
   devServer: {
+    historyApiFallback: true,
     proxy: {
       '/graphql': 'http://localhost:3000'
     }
+  },
+  output: {
+    publicPath: '/'
   },
   module: {
     rules: [

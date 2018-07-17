@@ -1,6 +1,7 @@
 import * as React from "react";
 import { gql } from "apollo-boost";
 import { Query } from "react-apollo";
+import { Link } from 'react-router-dom';
 import { GetPensQuery } from "../graphql";
 
 const QUERY = gql`
@@ -8,6 +9,7 @@ const QUERY = gql`
     pens {
       id
       brand {
+        id
         name
       }
       model
@@ -28,7 +30,7 @@ const Pens = () => (
           {data.pens.map(pen => {
             return (
               <div key={pen.id}>
-                {pen.brand.name} {pen.model}
+                <Link to={`/brands/${pen.brand.id}`}>{pen.brand.name}</Link> {pen.model}
               </div>
             )
           })}
