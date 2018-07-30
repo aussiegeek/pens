@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/prop-types": "^15.5.3",
-    "@types/react": "^16.4.6",
+    "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
     "@types/react-router-dom": "^4.2.7",
     "apollo": "^1.6.0",
