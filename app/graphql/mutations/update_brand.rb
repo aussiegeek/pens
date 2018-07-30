@@ -1,14 +1,15 @@
-class Mutations::CreateBrand < Mutations::BaseMutation
+class Mutations::UpdateBrand < Mutations::BaseMutation
   null false
 
+  argument :id, ID, required: true
   argument :name, String, required: true
 
   field :brand, Types::BrandType, null: true
   field :success, Boolean, null: false
 
-  def resolve(name:)
-    brand = Brand.new(name: name)
-    success = brand.save
+  def resolve(id:, name:)
+    brand = Brand.find(id)
+    success = brand.update_attributes(name: name)
 
     {
       brand: brand,
