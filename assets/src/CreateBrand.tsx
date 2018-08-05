@@ -1,6 +1,6 @@
 import * as React from "react";
 import { gql } from "apollo-boost";
-import { Mutation } from "react-apollo";
+import { Mutation, MutationFn } from "react-apollo";
 import { RouterProps } from "react-router";
 import { CreateBrandMutation, CreateBrandMutationVariables } from "../graphql";
 
@@ -43,27 +43,32 @@ export class CreateBrand extends React.Component<
     }
   }
 
+  onSubmit(
+    createBrand: MutationFn<CreateBrandMutation, CreateBrandMutationVariables>
+  ) {
+    return (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      createBrand({
+        variables: {
+          createBrand: {
+            name: this.state.name
+          }
+        }
+      }).then();
+    };
+  }
+
+  valueChanged(e: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({ name: e.target.value });
+  }
+
   render() {
     return (
       <BrandMutation mutation={MUTATION} onCompleted={this.onCompleted}>
         {(createBrand, { data }) => (
           <div>
-            <form
-              onSubmit={e => {
-                e.preventDefault();
-                createBrand({
-                  variables: {
-                    createBrand: {
-                      name: this.state.name
-                    }
-                  }
-                }).then();
-              }}
-            >
-              <input
-                value={this.state.name}
-                onChange={e => this.setState({ name: e.target.value })}
-              />
+            <form onSubmit={this.onSubmit(createBrand)}>
+              <input value={this.state.name} onChange={this.valueChanged} />
               <input type="submit" />
             </form>
           </div>

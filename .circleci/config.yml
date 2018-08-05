@@ -24,4 +24,5 @@ jobs:
             - assets/node_modules
           key: v1-dependencies-{{ checksum "assets/package.json" }}
 
+      - run: cd assets; yarn tslint
       - run: cd assets; yarn prod

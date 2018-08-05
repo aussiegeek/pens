@@ -27,7 +27,7 @@ export const App: React.SFC<{}> = props => {
         <Switch>
           <Route path="/brands/new" component={CreateBrand} />
           <Route path="/brands/:id" component={Brand} />
-          <Route exact path="/" component={Pens} />
+          <Route exact={true} path="/" component={Pens} />
           <Route component={NoMatch} />
         </Switch>
       </div>
