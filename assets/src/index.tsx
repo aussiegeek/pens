@@ -8,7 +8,7 @@ import { App } from "./App";
 const el = document.createElement("div");
 document.body.appendChild(el);
 
-const client = new ApolloClient({ uri: "/graphql" });
+const client = new apolloBoost({ uri: "/graphql" });
 
 const ApolloApp = (
   <ApolloProvider client={client}>
