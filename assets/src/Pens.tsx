@@ -1,7 +1,7 @@
 import * as React from "react";
 import { gql } from "apollo-boost";
 import { Query } from "react-apollo";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { GetPensQuery } from "../graphql";
 
 const QUERY = gql`
@@ -17,7 +17,7 @@ const QUERY = gql`
   }
 `;
 
-class PensQuery extends Query<GetPensQuery> { }
+class PensQuery extends Query<GetPensQuery> {}
 
 const Pens = () => (
   <PensQuery query={QUERY}>
@@ -30,12 +30,13 @@ const Pens = () => (
           {data.pens.map(pen => {
             return (
               <div key={pen.id}>
-                <Link to={`/brands/${pen.brand.id}`}>{pen.brand.name}</Link> {pen.model}
+                <Link to={`/brands/${pen.brand.id}`}>{pen.brand.name}</Link>{" "}
+                {pen.model}
               </div>
-            )
+            );
           })}
         </div>
-      )
+      );
     }}
   </PensQuery>
 );
