@@ -4,6 +4,7 @@ import { CurrentUser } from "./CurrentUser";
 import { Pens } from "./Pens";
 import { Brand } from "./Brand";
 import { CreateBrand } from "./CreateBrand";
+import { EditBrand } from "./EditBrand";
 
 const NoMatch: React.SFC<{}> = props => {
   return <h1>not found</h1>;
@@ -26,6 +27,7 @@ export const App: React.SFC<{}> = props => {
 
         <Switch>
           <Route path="/brands/new" component={CreateBrand} />
+          <Route path="/brands/:id/edit" component={EditBrand} />
           <Route path="/brands/:id" component={Brand} />
           <Route exact={true} path="/" component={Pens} />
           <Route component={NoMatch} />

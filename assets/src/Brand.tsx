@@ -38,6 +38,7 @@ export const Brand: React.SFC<BrandProps> = props => {
         return (
           <div>
             <h1>{data.getBrand.name}</h1>
+            <Link to={`/brands/${data.getBrand.id}/edit`}>[Edit]</Link>
             {data.getBrand.pens.map(pen => {
               return <div key={pen.id}>{pen.model}</div>;
             })}
