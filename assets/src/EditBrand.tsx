@@ -68,6 +68,7 @@ export class EditBrand extends React.PureComponent<ComponentProps> {
       }).then();
     };
   }
+
   onCompleted(data?: UpdateBrandMutation) {
     if (data && data.updateBrand.success && data.updateBrand.brand) {
       this.props.history.push(`/brands/${data.updateBrand.brand.id}`);

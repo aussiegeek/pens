@@ -3,7 +3,6 @@ import * as React from "react";
 interface ComponentProps {
   onSubmit: (params: BrandParams) => void;
   brand: {
-    id: string;
     name: string;
   };
 }
