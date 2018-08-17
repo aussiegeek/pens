@@ -9,7 +9,7 @@
     "@types/react-dom": "^16.0.7",
     "@types/react-router-dom": "^4.3.0",
     "apollo": "^1.7.0",
-    "apollo-boost": "^0.1.13",
+    "apollo-boost": "^0.1.14",
     "awesome-typescript-loader": "^5.2.0",
     "graphql": "^0.13.2",
     "html-webpack-plugin": "^3.2.0",
