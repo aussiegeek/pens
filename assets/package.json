@@ -8,7 +8,7 @@
     "@types/react": "^16.4.11",
     "@types/react-dom": "^16.0.7",
     "@types/react-router-dom": "^4.3.0",
-    "apollo": "^1.7.0",
+    "apollo": "^1.7.1",
     "apollo-boost": "^0.1.14",
     "awesome-typescript-loader": "^5.2.0",
     "graphql": "^0.13.2",
