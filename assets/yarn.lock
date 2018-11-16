@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@apollographql/apollo-tools@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@apollographql/apollo-tools/-/apollo-tools-0.2.6.tgz#a3eedd6baf84e27a92b0fb660b42ce1795d6ee92"
+"@apollographql/apollo-tools@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@apollographql/apollo-tools/-/apollo-tools-0.2.7.tgz#550502b315e49040e07d7e5065d15c5116c506e6"
   dependencies:
-    apollo-env "0.2.3"
+    apollo-env "0.2.4"
 
 "@apollographql/graphql-language-service-interface@^2.0.2":
   version "2.0.2"
@@ -634,54 +634,54 @@ apollo-client@^2.4.5:
   optionalDependencies:
     "@types/async" "2.0.50"
 
-apollo-codegen-core@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/apollo-codegen-core/-/apollo-codegen-core-0.30.1.tgz#4b234b13efa72a318a8d4498ab610deca83a3ffe"
+apollo-codegen-core@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-core/-/apollo-codegen-core-0.30.2.tgz#2810e8725cb0d839121d575c7f49ea6d3efb057a"
   dependencies:
     "@babel/generator" "7.1.3"
     "@babel/parser" "^7.1.3"
     "@babel/types" "7.1.3"
-    apollo-env "0.2.3"
-    apollo-language-server "1.1.1"
+    apollo-env "0.2.4"
+    apollo-language-server "1.1.2"
     ast-types "^0.11.6"
     common-tags "^1.5.1"
     recast "^0.15.3"
 
-apollo-codegen-flow@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/apollo-codegen-flow/-/apollo-codegen-flow-0.30.1.tgz#b930be76e079d7872ff8da277d1da736873ddb27"
+apollo-codegen-flow@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-flow/-/apollo-codegen-flow-0.30.2.tgz#d9be87f948e5b1182e0e3ec71af0737f50810d3a"
   dependencies:
     "@babel/types" "7.1.3"
-    apollo-codegen-core "0.30.1"
-    apollo-env "0.2.3"
+    apollo-codegen-core "0.30.2"
+    apollo-env "0.2.4"
     change-case "^3.0.1"
     inflected "^2.0.3"
 
-apollo-codegen-scala@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/apollo-codegen-scala/-/apollo-codegen-scala-0.30.1.tgz#4682980e367b07e0400d3142e749eb6a9852732a"
+apollo-codegen-scala@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-scala/-/apollo-codegen-scala-0.30.2.tgz#9783c26ae9d9d3ef79ea752c25802ddc26c99b98"
   dependencies:
-    apollo-codegen-core "0.30.1"
-    apollo-env "0.2.3"
+    apollo-codegen-core "0.30.2"
+    apollo-env "0.2.4"
     change-case "^3.0.1"
     inflected "^2.0.3"
 
-apollo-codegen-swift@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/apollo-codegen-swift/-/apollo-codegen-swift-0.30.1.tgz#9fc24f4c0f7eb6fbd507468bc9b8a94a3ae9bacb"
+apollo-codegen-swift@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-swift/-/apollo-codegen-swift-0.30.2.tgz#62c1b65b9202a6a17cd67fd535026c3d71eca309"
   dependencies:
-    apollo-codegen-core "0.30.1"
-    apollo-env "0.2.3"
+    apollo-codegen-core "0.30.2"
+    apollo-env "0.2.4"
     change-case "^3.0.1"
     inflected "^2.0.3"
 
-apollo-codegen-typescript@0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/apollo-codegen-typescript/-/apollo-codegen-typescript-0.30.1.tgz#e476c21f21e50e7e18b9736004c9dfd3fc375bdd"
+apollo-codegen-typescript@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-typescript/-/apollo-codegen-typescript-0.30.2.tgz#ee350006e16037eca931fb735cf1ad3a227f0691"
   dependencies:
     "@babel/types" "7.1.3"
-    apollo-codegen-core "0.30.1"
-    apollo-env "0.2.3"
+    apollo-codegen-core "0.30.2"
+    apollo-env "0.2.4"
     change-case "^3.0.1"
     inflected "^2.0.3"
 
@@ -708,22 +708,22 @@ apollo-engine-reporting@0.0.2:
     graphql-extensions "0.1.2"
     lodash "^4.17.10"
 
-apollo-env@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/apollo-env/-/apollo-env-0.2.3.tgz#a03849c5b5f493f079bb42dac8a9e2a9a6286c6e"
+apollo-env@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/apollo-env/-/apollo-env-0.2.4.tgz#6af44ef0af1b8c8a4d7da5d66ff55909858a88fa"
   dependencies:
     core-js "^3.0.0-beta.3"
     node-fetch "^2.2.0"
 
-apollo-language-server@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/apollo-language-server/-/apollo-language-server-1.1.1.tgz#2ea15425c64aa0b87f36d11fbcd0aa409bb4bb8c"
+apollo-language-server@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/apollo-language-server/-/apollo-language-server-1.1.2.tgz#4941ddc9ba70729527e81a3a225c915ed85247ef"
   dependencies:
-    "@apollographql/apollo-tools" "0.2.6"
+    "@apollographql/apollo-tools" "0.2.7"
     "@apollographql/graphql-language-service-interface" "^2.0.2"
     "@endemolshinegroup/cosmiconfig-typescript-loader" "^1.0.0"
     apollo-datasource "^0.1.3"
-    apollo-env "0.2.3"
+    apollo-env "0.2.4"
     apollo-link "^1.2.3"
     apollo-link-context "^1.0.9"
     apollo-link-error "^1.1.1"
@@ -861,11 +861,11 @@ apollo-utilities@^1.0.0, apollo-utilities@^1.0.16, apollo-utilities@^1.0.8:
   dependencies:
     fast-json-stable-stringify "^2.0.0"
 
-apollo@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/apollo/-/apollo-2.1.1.tgz#5ceba28dd226b39e5add444ddfbf2fc0832b63c4"
+apollo@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/apollo/-/apollo-2.1.2.tgz#0efdd1981f8c5e35d5bd33461d9bc5394cbfa94e"
   dependencies:
-    "@apollographql/apollo-tools" "0.2.6"
+    "@apollographql/apollo-tools" "0.2.7"
     "@oclif/command" "^1.4.21"
     "@oclif/config" "^1.6.17"
     "@oclif/plugin-autocomplete" "^0.1.0"
@@ -873,14 +873,14 @@ apollo@^2.1.1:
     "@oclif/plugin-not-found" "^1.0.9"
     "@oclif/plugin-plugins" "^1.7.2"
     "@oclif/plugin-warn-if-update-available" "^1.3.9"
-    apollo-codegen-core "0.30.1"
-    apollo-codegen-flow "0.30.1"
-    apollo-codegen-scala "0.30.1"
-    apollo-codegen-swift "0.30.1"
-    apollo-codegen-typescript "0.30.1"
+    apollo-codegen-core "0.30.2"
+    apollo-codegen-flow "0.30.2"
+    apollo-codegen-scala "0.30.2"
+    apollo-codegen-swift "0.30.2"
+    apollo-codegen-typescript "0.30.2"
     apollo-engine-reporting "0.0.2"
-    apollo-env "0.2.3"
-    apollo-language-server "1.1.1"
+    apollo-env "0.2.4"
+    apollo-language-server "1.1.2"
     chalk "^2.4.1"
     cli-ux "^4.3.0"
     env-ci "^2.1.0"
